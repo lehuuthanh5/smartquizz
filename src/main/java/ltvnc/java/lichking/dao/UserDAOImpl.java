@@ -39,7 +39,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUserByUsername(String username) {
 		try {
-			User user = entityManager.createQuery(
+			User user = (User) entityManager.createNativeQuery(
 					"select u from User u where u.username='" + username + "'",
 					User.class).getSingleResult();
 			return user;
@@ -51,7 +51,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUserByEmail(String email) {
 		try {
-			User user = entityManager.createQuery(
+			User user = (User) entityManager.createNativeQuery(
 					"select u from User u where u.email='" + email + "'",
 					User.class).getSingleResult();
 			return user;
@@ -69,11 +69,12 @@ public class UserDAOImpl implements UserDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<User> getListUser(int limit, int offset) {
 		try {
 			List<User> users = entityManager
-					.createQuery("select u from User u", User.class)
+					.createNativeQuery("select u from User u", User.class)
 					.setFirstResult(offset).setMaxResults(limit)
 					.getResultList();
 			return users;
