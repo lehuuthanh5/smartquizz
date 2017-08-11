@@ -11,7 +11,7 @@
 		<properties>
 			<property name="hibernate.connection.charSet" value="UTF-8" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://www.db4free.net:3306/springsecuritydb" />
+				value="jdbc:mysql://db4free.net:3306/springsecuritydb" />
 			<property name="javax.persistence.jdbc.user" value="lehuuthanh5" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.password" value="123456" />
