@@ -11,10 +11,10 @@
 		<properties>
 			<property name="hibernate.connection.charSet" value="UTF-8" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://db4free.net:3306/springsecuritydb" />
-			<property name="javax.persistence.jdbc.user" value="lehuuthanh5" />
+				value="jdbc:mysql://sql12.freesqldatabase.com:3306/sql12189638" />
+			<property name="javax.persistence.jdbc.user" value="sql12189638" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.password" value="123456" />
+			<property name="javax.persistence.jdbc.password" value="QNswXxZSUk" />
 		</properties>
 	</persistence-unit>
 </persistence>
